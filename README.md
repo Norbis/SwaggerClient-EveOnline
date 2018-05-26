@@ -21,11 +21,11 @@ To install the bindings via [Composer](http://getcomposer.org/), add the followi
   "repositories": [
     {
       "type": "git",
-      "url": "https://github.com/GIT_USER_ID/GIT_REPO_ID.git"
+      "url": "https://gitlab.com/Norbis/SwaggerClient-EveOnline.git"
     }
   ],
   "require": {
-    "GIT_USER_ID/GIT_REPO_ID": "*@dev"
+    "Norbis/SwaggerClient-EveOnline": "*@dev"
   }
 }
 ```
@@ -37,7 +37,7 @@ Then run `composer install`
 Download the files and include `autoload.php`:
 
 ```php
-    require_once('/path/to/SwaggerClient-php/autoload.php');
+    require_once('/path/to/Norbis/SwaggerClient-EveOnline/autoload.php');
 ```
 
 ## Tests

@@ -16,7 +16,7 @@ Name | Type | Description | Notes
 **is_assistance** | **bool** | is_assistance boolean | [optional] 
 **is_offensive** | **bool** | is_offensive boolean | [optional] 
 **is_warp_safe** | **bool** | is_warp_safe boolean | [optional] 
-**modifiers** | [**\Swagger\Client\Model\GetDogmaEffectsEffectIdOkModifiers[]**](GetDogmaEffectsEffectIdOkModifiers.md) | modifiers array | [optional] 
+**modifiers** | [**\Swagger\Client\Model\GetDogmaEffectsEffectIdModifier[]**](GetDogmaEffectsEffectIdModifier.md) | modifiers array | [optional] 
 **name** | **string** | name string | [optional] 
 **post_expression** | **int** | post_expression integer | [optional] 
 **pre_expression** | **int** | pre_expression integer | [optional] 

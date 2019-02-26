@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**date** | [**\DateTime**](Date.md) | date string | 
+**date** | [**\DateTime**](\DateTime.md) | date string | 
 **quantity** | **int** | quantity integer | 
 **solar_system_id** | **int** | solar_system_id integer | 
 **type_id** | **int** | type_id integer | 

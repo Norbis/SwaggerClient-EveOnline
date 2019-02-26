@@ -21,13 +21,17 @@ Return a list of wars  --- Alternate route: `/dev/wars/`  Alternate route: `/leg
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new Swagger\Client\Api\WarsApi();
+$apiInstance = new Swagger\Client\Api\WarsApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client()
+);
 $datasource = "tranquility"; // string | The server name you would like data from
 $if_none_match = "if_none_match_example"; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
-$max_war_id = 56; // int | Only return wars with ID smaller than this.
+$max_war_id = 56; // int | Only return wars with ID smaller than this
 
 try {
-    $result = $api_instance->getWars($datasource, $if_none_match, $max_war_id);
+    $result = $apiInstance->getWars($datasource, $if_none_match, $max_war_id);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling WarsApi->getWars: ', $e->getMessage(), PHP_EOL;
@@ -41,7 +45,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **datasource** | **string**| The server name you would like data from | [optional] [default to tranquility]
  **if_none_match** | **string**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional]
- **max_war_id** | **int**| Only return wars with ID smaller than this. | [optional]
+ **max_war_id** | **int**| Only return wars with ID smaller than this | [optional]
 
 ### Return type
 
@@ -70,13 +74,17 @@ Return details about a war  --- Alternate route: `/dev/wars/{war_id}/`  Alternat
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new Swagger\Client\Api\WarsApi();
+$apiInstance = new Swagger\Client\Api\WarsApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client()
+);
 $war_id = 56; // int | ID for a war
 $datasource = "tranquility"; // string | The server name you would like data from
 $if_none_match = "if_none_match_example"; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
 
 try {
-    $result = $api_instance->getWarsWarId($war_id, $datasource, $if_none_match);
+    $result = $apiInstance->getWarsWarId($war_id, $datasource, $if_none_match);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling WarsApi->getWarsWarId: ', $e->getMessage(), PHP_EOL;
@@ -108,7 +116,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getWarsWarIdKillmails**
-> \Swagger\Client\Model\GetWarsWarIdKillmails200Ok[] getWarsWarIdKillmails($war_id, $datasource, $if_none_match, $page)
+> object[] getWarsWarIdKillmails($war_id, $datasource, $if_none_match, $page)
 
 List kills for a war
 
@@ -119,14 +127,18 @@ Return a list of kills related to a war  --- Alternate route: `/dev/wars/{war_id
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new Swagger\Client\Api\WarsApi();
+$apiInstance = new Swagger\Client\Api\WarsApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client()
+);
 $war_id = 56; // int | A valid war ID
 $datasource = "tranquility"; // string | The server name you would like data from
 $if_none_match = "if_none_match_example"; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
 $page = 1; // int | Which page of results to return
 
 try {
-    $result = $api_instance->getWarsWarIdKillmails($war_id, $datasource, $if_none_match, $page);
+    $result = $apiInstance->getWarsWarIdKillmails($war_id, $datasource, $if_none_match, $page);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling WarsApi->getWarsWarIdKillmails: ', $e->getMessage(), PHP_EOL;
@@ -145,7 +157,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\GetWarsWarIdKillmails200Ok[]**](../Model/GetWarsWarIdKillmails200Ok.md)
+**object[]**
 
 ### Authorization
 

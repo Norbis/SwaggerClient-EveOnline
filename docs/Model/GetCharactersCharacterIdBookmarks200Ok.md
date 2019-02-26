@@ -4,11 +4,11 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **bookmark_id** | **int** | bookmark_id integer | 
-**coordinates** | [**\Swagger\Client\Model\CharacterscharacterIdbookmarksCoordinates**](CharacterscharacterIdbookmarksCoordinates.md) |  | [optional] 
+**coordinates** | [**\Swagger\Client\Model\GetCharactersCharacterIdBookmarksCoordinates**](GetCharactersCharacterIdBookmarksCoordinates.md) |  | [optional] 
 **created** | [**\DateTime**](\DateTime.md) | created string | 
 **creator_id** | **int** | creator_id integer | 
 **folder_id** | **int** | folder_id integer | [optional] 
-**item** | [**\Swagger\Client\Model\CharacterscharacterIdbookmarksItem**](CharacterscharacterIdbookmarksItem.md) |  | [optional] 
+**item** | [**\Swagger\Client\Model\GetCharactersCharacterIdBookmarksItem**](GetCharactersCharacterIdBookmarksItem.md) |  | [optional] 
 **label** | **string** | label string | 
 **location_id** | **int** | location_id integer | 
 **notes** | **string** | notes string | 

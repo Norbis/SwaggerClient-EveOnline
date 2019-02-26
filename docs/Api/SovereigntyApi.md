@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 
 # **getSovereigntyCampaigns**
-> \Swagger\Client\Model\GetSovereigntyCampaigns200Ok[] getSovereigntyCampaigns($datasource, $if_none_match)
+> object[] getSovereigntyCampaigns($datasource, $if_none_match)
 
 List sovereignty campaigns
 
@@ -21,12 +21,16 @@ Shows sovereignty data for campaigns.  --- Alternate route: `/dev/sovereignty/ca
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new Swagger\Client\Api\SovereigntyApi();
+$apiInstance = new Swagger\Client\Api\SovereigntyApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client()
+);
 $datasource = "tranquility"; // string | The server name you would like data from
 $if_none_match = "if_none_match_example"; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
 
 try {
-    $result = $api_instance->getSovereigntyCampaigns($datasource, $if_none_match);
+    $result = $apiInstance->getSovereigntyCampaigns($datasource, $if_none_match);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling SovereigntyApi->getSovereigntyCampaigns: ', $e->getMessage(), PHP_EOL;
@@ -43,7 +47,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\GetSovereigntyCampaigns200Ok[]**](../Model/GetSovereigntyCampaigns200Ok.md)
+**object[]**
 
 ### Authorization
 
@@ -57,7 +61,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getSovereigntyMap**
-> \Swagger\Client\Model\GetSovereigntyMap200Ok[] getSovereigntyMap($datasource, $if_none_match)
+> object[] getSovereigntyMap($datasource, $if_none_match)
 
 List sovereignty of systems
 
@@ -68,12 +72,16 @@ Shows sovereignty information for solar systems  --- Alternate route: `/dev/sove
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new Swagger\Client\Api\SovereigntyApi();
+$apiInstance = new Swagger\Client\Api\SovereigntyApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client()
+);
 $datasource = "tranquility"; // string | The server name you would like data from
 $if_none_match = "if_none_match_example"; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
 
 try {
-    $result = $api_instance->getSovereigntyMap($datasource, $if_none_match);
+    $result = $apiInstance->getSovereigntyMap($datasource, $if_none_match);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling SovereigntyApi->getSovereigntyMap: ', $e->getMessage(), PHP_EOL;
@@ -90,7 +98,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\GetSovereigntyMap200Ok[]**](../Model/GetSovereigntyMap200Ok.md)
+**object[]**
 
 ### Authorization
 
@@ -104,7 +112,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getSovereigntyStructures**
-> \Swagger\Client\Model\GetSovereigntyStructures200Ok[] getSovereigntyStructures($datasource, $if_none_match)
+> object[] getSovereigntyStructures($datasource, $if_none_match)
 
 List sovereignty structures
 
@@ -115,12 +123,16 @@ Shows sovereignty data for structures.  --- Alternate route: `/dev/sovereignty/s
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new Swagger\Client\Api\SovereigntyApi();
+$apiInstance = new Swagger\Client\Api\SovereigntyApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client()
+);
 $datasource = "tranquility"; // string | The server name you would like data from
 $if_none_match = "if_none_match_example"; // string | ETag from a previous request. A 304 will be returned if this matches the current ETag
 
 try {
-    $result = $api_instance->getSovereigntyStructures($datasource, $if_none_match);
+    $result = $apiInstance->getSovereigntyStructures($datasource, $if_none_match);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling SovereigntyApi->getSovereigntyStructures: ', $e->getMessage(), PHP_EOL;
@@ -137,7 +149,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\GetSovereigntyStructures200Ok[]**](../Model/GetSovereigntyStructures200Ok.md)
+**object[]**
 
 ### Authorization
 

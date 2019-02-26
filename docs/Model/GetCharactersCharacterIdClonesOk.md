@@ -3,8 +3,8 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**home_location** | [**\Swagger\Client\Model\GetCharactersCharacterIdClonesOkHomeLocation**](GetCharactersCharacterIdClonesOkHomeLocation.md) |  | [optional] 
-**jump_clones** | [**\Swagger\Client\Model\GetCharactersCharacterIdClonesOkJumpClones[]**](GetCharactersCharacterIdClonesOkJumpClones.md) | jump_clones array | 
+**home_location** | [**\Swagger\Client\Model\GetCharactersCharacterIdClonesHomeLocation**](GetCharactersCharacterIdClonesHomeLocation.md) |  | [optional] 
+**jump_clones** | [**\Swagger\Client\Model\GetCharactersCharacterIdClonesJumpClone[]**](GetCharactersCharacterIdClonesJumpClone.md) | jump_clones array | 
 **last_clone_jump_date** | [**\DateTime**](\DateTime.md) | last_clone_jump_date string | [optional] 
 **last_station_change_date** | [**\DateTime**](\DateTime.md) | last_station_change_date string | [optional] 
 
